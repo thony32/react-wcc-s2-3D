@@ -1,5 +1,4 @@
 import { Canvas } from "@react-three/fiber";
-import { PlanetModel } from "./PlanetModel";
 import { OrbitControls } from "@react-three/drei";
 import { Model } from "./Model";
 import { Suspense, useRef } from "react";

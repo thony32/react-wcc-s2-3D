@@ -1,10 +1,10 @@
 import { forwardRef, useImperativeHandle, useRef, useState } from "react";
-import { useGLTF, useAnimations } from "@react-three/drei";
+import { useGLTF } from "@react-three/drei";
 import { useSpring, animated, config } from "@react-spring/three";
 
 export const Model = forwardRef((props: any, ref: any) => {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF(
+  const { nodes, materials } = useGLTF(
     "/kamisama_planet/scene.gltf"
   ) as any;
 

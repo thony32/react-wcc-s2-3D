@@ -2,6 +2,7 @@ import { useProgress } from '@react-three/drei';
 
 export function Loading(props: { progress?: number }) {
     const { progress } = useProgress();
+    console.log(props);
     return (
         <div className="h-full flex items-center justify-center">
             <div className='text-center animate-pulse'>
