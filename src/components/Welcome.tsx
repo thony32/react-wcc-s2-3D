@@ -1,7 +1,8 @@
+import logo from '../assets/TiaZaza.svg';
 function Welcome() {
   return (
     <div>
-      <div className="navbar">
+      <div className="navbar bg-red-100">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -15,7 +16,7 @@ function Welcome() {
               <li><a>Kilalao 3</a></li>
             </ul>
           </div>
-          <a className="normal-case text-xl">Logo</a>
+          <a className="normal-case text-xl"><img src={logo} alt="" className='w-48 h-20' /></a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-3">
@@ -40,9 +41,9 @@ function Welcome() {
               </svg>
             </label>
             <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 rounded-box w-52">
-              <li><a>Lahy</a></li>
-              <li><a>Vavy</a></li>
-              <li><a>Mainty</a></li>
+              <li><a><span>🧒</span><label htmlFor="">Lahy</label></a></li>
+              <li><a><span>🧑</span><label htmlFor="">Vavy</label></a></li>
+              <li><a><span>🌚</span><label htmlFor="">Maizina</label></a></li>
             </ul>
           </div>
         </div>
