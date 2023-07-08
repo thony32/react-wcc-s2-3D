@@ -21,11 +21,11 @@ function Welcome() {
         </div>
         <div className="navbar-center hidden lg:flex">
           <div className="menu menu-horizontal px-3 space-x-8">
-            <div><button className='border border-[#5658D9] text-lg p-3 rounded-md font-bold'>Fandraisana</button></div>
-            <div><button className='border border-[#5658D9] text-lg p-3 rounded-md font-bold'>Ireo Kilalao</button></div>
-            <div><button className='border border-[#5658D9] text-lg p-3 rounded-md font-bold'>Kilalao 1</button></div>
-            <div><button className='border border-[#5658D9] text-lg p-3 rounded-md font-bold'>Kilalao 2</button></div>
-            <div><button className='border border-[#5658D9] text-lg p-3 rounded-md font-bold'>Kilalao 3</button></div>
+            <div><button className='text-lg p-3 font-bold'>Fandraisana</button></div>
+            <div><button className='text-lg p-3 font-bold'>Ireo Kilalao</button></div>
+            <div><button className='text-lg p-3  font-bold'>Kilalao 1</button></div>
+            <div><button className='text-lg p-3  font-bold'>Kilalao 2</button></div>
+            <div><button className='text-lg p-3  font-bold'>Kilalao 3</button></div>
           </div>
         </div>
         <div className="navbar-end">
@@ -52,21 +52,25 @@ function Welcome() {
 
       <div className="grid lg:grid-cols-2 ">
         <div className="flex flex-col 2xl:justify-between items-center gap-8 py-16 px-5 2xl:py-44 2xl:px-16">
+
           <div>
             <h1 className="fortnite text-5xl text-center lg:text-left 2xl:text-8xl font-bold">
               Tongasoa eto amin'ny TIA ZAZA
             </h1>
           </div>
           <div>
+
             <p className="text-lg text-center 2xl:text-left 2xl:text-2xl">Andeha isika hilalao rankizy !</p>
           </div>
           <div className="">
             <button className="2xl:text-2xl bg-[#5658D9] hover:bg-[#353789] hover:transition hover:duration-300 text-base-100 p-4 rounded-full font-bold">
               Ireo kilalaontsika {"->"}{" "}
+
             </button>
+
           </div>
         </div>
-        <div className="">
+        <div className="flex justify-center items-center">
           <img src={kids} alt="" className="" />
         </div>
       </div>
