@@ -5,8 +5,8 @@ import star3d from "../assets/star3D.svg";
 function Presentation() {
   return (
     <div>
-
-      <div className="grid lg:grid-cols-5 bg-red-200">
+     
+      <div className="grid lg:grid-cols-5 bg-red-200 px-48 py-24">
         <div>
           <img src={triangle3d} alt="" />
         </div>
