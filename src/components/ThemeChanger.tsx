@@ -11,7 +11,7 @@ function ThemeChanger() {
             window.dispatchEvent(new Event("themeChanged"))
         } else {
             localStorage.setItem("theme", "light")
-            document.getElementById("app")!.setAttribute("data-theme", "light")
+            document.getElementById("app")!.setAttribute("data-theme", "valentine")
             window.dispatchEvent(new Event("themeChanged"))
         }
     }, [])
