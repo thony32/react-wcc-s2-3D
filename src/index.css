@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Fortnite";
+    src: url("./assets/font/fortnite.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+.fortnite{
+    font-family: "Fortnite";
+}
