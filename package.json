@@ -23,7 +23,8 @@
     "react-dom": "^18.2.0",
     "react-modal": "^3.16.1",
     "three": "^0.154.0",
-    "tsparticles-confetti": "^2.10.1"
+    "tsparticles-confetti": "^2.10.1",
+    "use-sound": "^4.0.1"
   },
   "devDependencies": {
     "@types/node": "^20.4.1",

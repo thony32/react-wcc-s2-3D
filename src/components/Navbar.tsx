@@ -1,5 +1,6 @@
 import ThemeChanger from "./ThemeChanger"
 import logo from '../assets/TiaZaza.svg';
+import Sound from "./Sound";
 
 function Navbar() {
     return (
@@ -28,7 +29,8 @@ function Navbar() {
                     <div><button className='border border-[#5658D9] text-lg p-3 rounded-md font-bold'>Kilalao 3</button></div>
                 </div>
             </div>
-            <div className="navbar-end">
+            <div className="navbar-end flex gap-4 items-center">
+                <Sound />
                 <ThemeChanger />
             </div>
         </div>

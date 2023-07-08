@@ -5,6 +5,7 @@ import GameTwo from "./components/GameTwo";
 import Navbar from "./components/Navbar";
 import Presentation from "./components/Presentation";
 import Welcome from "./components/Welcome";
+import "./App.css";
 
 function App() {
   return (
@@ -16,6 +17,11 @@ function App() {
       <GameTwo />
       <GameThree />
       <Footer />
+
+      {/* astuces */}
+      <div className="fixed right-0 top-[40%] m-2">
+        <label className="text-astuces fortnite">Sound on please</label>
+      </div>
     </div>
   );
 }
