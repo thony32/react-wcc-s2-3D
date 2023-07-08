@@ -32,8 +32,8 @@ function GameThree() {
   function done() {
     const selectedTotal = selected.reduce((a: any, b: any) => a + b, 0);
     selectedTotal === answer
-      ? setResult("correct!")
-      : setResult("incorrect...");
+      ? setResult("Marina!")
+      : setResult("Diso!");
   }
 
   function reset() {
@@ -43,12 +43,12 @@ function GameThree() {
   return (
     <div className="px-[10%] space-y-5">
       <div>
-        <h1 className="fortnite text-7xl text-primary">Calculeoooo</h1>
+        <h1 className="fortnite text-5xl text-center lg:text-7xl lg:text-left text-primary">Kajikajy</h1>
       </div>
 
       <div className="grid grid-cols-2 relative">
         <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quod quis cupiditate commodi corrupti et ducimus id error inventore non aut? Eum commodi id, cum ipsa asperiores porro deserunt tenetur.
+          Ity kilalao ity dia manampy anao hahay ny fomba ampifanampiana isa roa.
         </div>
         <div className="">
           <div className="absolute bottom-0">
@@ -56,7 +56,7 @@ function GameThree() {
               <div className="space-y-2 text-center capitalize">
                 <h1 className="text-3xl fortnite">{result}</h1>
                 <button className="btn btn-success" onClick={reset}>
-                  Try again
+                  Mamerina
                 </button>
               </div>
             )}
@@ -65,7 +65,7 @@ function GameThree() {
             <div className="w-1/2 space-y-5">
               <div className="">
                 <div className="">
-                  <label className="text-xl font-semibold">Select numbers that add up to : {answer}</label>
+                  <label className="text-xl font-semibold">Tondroy ireo isa hampifanampiana hanome mba : {answer}</label>
                 </div>
               </div>
               <div className="flex justify-between gap-5">
@@ -94,10 +94,10 @@ function GameThree() {
               </div>
               <div className="flex justify-center gap-2">
                 <button className="btn btn-success" onClick={done}>
-                  Done
+                  Tsaraina
                 </button>
                 <button className="btn" onClick={reset}>
-                  Reset
+                  Mamerina
                 </button>
               </div>
             </div>
