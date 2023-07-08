@@ -89,21 +89,21 @@ function GameTwo() {
 
 
   return (
-    <div className="px-[10%] space-y-28">
+    <div className="px-[10%] space-y-12 lg:space-y-16 ">
       <div>
-        <h1 className="fortnite text-7xl text-primary">Lookoy</h1>
+        <h1 className="fortnite text-5xl text-center lg:text-7xl lg:text-left text-primary">Fandokoina Sary</h1>
       </div>
-      <div className="grid grid-cols-8">
+      <div className="lg:grid lg:grid-cols-8 bg-red-200">
         {/* svgs */}
-        <div className="col-span-5 space-y-10 h-[75vh]">
+        <div className="lg:col-span-5 space-y-10 h-[75vh]">
           {/* menus */}
-          <div className="flex gap-1">
-            <span onClick={() => setSubject("boy")} className="btn btn-sm btn-primary">Boy</span>
-            <span onClick={() => setSubject("girl")} className="btn btn-sm btn-primary">Girl</span>
+          <div className="flex justify-center lg:justify-start gap-1">
+            <span onClick={() => setSubject("boy")} className="btn btn-sm btn-primary">Sary voalohany</span>
+            <span onClick={() => setSubject("girl")} className="btn btn-sm btn-primary">Sary faharoa</span>
           </div>
           {/* Boys */}
           <div ref={boy_ref} className="absolute duration-700">
-            <svg className="w-[800px] h-[600px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1190.25 1683.749945">
+            <svg className="w-[300px] h-[380px] lg:w-[500px] lg:h-[480px] 2xl:w-[800px] 2xl:h-[600px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1190.25 1683.749945">
 
               <g onClick={() => setState("boots")} fill={colors.boots} ref={boots_ref}>
                 <path
@@ -230,7 +230,7 @@ function GameTwo() {
           </div>
           {/* Girls */}
           <div ref={girl_ref} className="absolute opacity-0 -translate-x-[75%] duration-300">
-            <svg viewBox="0 0 1190.25 1683.749945" className="w-[800px] h-[600px]">
+            <svg viewBox="0 0 1190.25 1683.749945" className="w-[300px] h-[380px] lg:w-[500px] lg:h-[480px]  2xl:w-[800px] 2xl:h-[600px]">
 
               <g onClick={() => setState("Cube_one")} fill={colorsG.Cube_one} ref={Cube_one_ref}>
                 <path
@@ -463,11 +463,11 @@ function GameTwo() {
             </svg>
           </div>
         </div>
-        <div className="col-span-3">
-          <h1 className="text-3xl fortnite">Colorié le dessin</h1>
-          <div className="mt-5 space-y-3">
+        <div className="col-span-3 lg:py-24">
+          <h1 className="text-3xl fortnite">Lokoy amin'izay mampety anao ny sary</h1>
+          <div className="mt-5 space-y-8">
             <p>Lorem explication anle zavtra atao eto</p>
-            <p className="text-xs italic">Séléctionner une partie à colorié</p>
+            <p className="text-xs italic">Tondroy ny toerana izay tianao ho lokoina, ary makà loko avy eto ambany</p>
           </div>
           <div>
             <span>{things}</span>

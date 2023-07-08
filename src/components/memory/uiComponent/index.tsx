@@ -112,7 +112,7 @@ const Uirender: React.FC = () => {
       {state.mCards && state.mCards.map((eachCard, i) =>
         <Flip key={eachCard.id}>
           <div>
-            <figure className="w-40 h-40 hover:shadow-xl hover:scale-110 card duration-300">
+            <figure className="w-24 h-24 lg:w-40 lg:h-40 hover:shadow-xl hover:scale-110 card duration-300">
               <img className="img-block p-4"
                 src={eachCard.open ? eachCard.imgUrl : QuestionImg}
                 alt="Memory"
@@ -130,9 +130,9 @@ const Uirender: React.FC = () => {
           renderItems={
             <div className='flex justify-center items-center'>
               <div className='space-y-5'>
-                <h3 className='text-3xl fortnite'>Félicition, tu a reussie !!</h3>
+                <h3 className='text-3xl fortnite'>Arahabainaa oooohhh!!!</h3>
                 <div className='flex justify-center'>
-                  <button onClick={handleRestart} className='btn btn-success'>Restart</button>
+                  <button onClick={handleRestart} className='btn btn-success'>Averina</button>
                 </div>
               </div>
             </div>
