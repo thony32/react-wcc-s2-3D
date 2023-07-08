@@ -1,9 +1,15 @@
 import { useEffect, useState } from "react";
-import { getQuestion } from "./Function";
+
+function getQuestion() {
+  const min = 2;
+  const max = 10;
+  const answer = Math.floor(Math.random() * (max - min + 1) + min);
+  return { answer, choices: [1, 2, 3, 4] };
+}
 
 function GameThree() {
-  const [question, setQuestion] = useState({ choices: [] });
-  const { answer, choices } = question;
+  const [question, setQuestion] = useState({ choices: [] }) as any;
+  const { answer, choices } = question as any;
   const [selected, setSelected] = useState([]) as any;
   const [result, setResult] = useState(null) as any;
 
@@ -57,7 +63,7 @@ function GameThree() {
 
         <div className="">
           <div className="">
-            {choices.map((number) => (
+            {choices.map((number : never) => (
               <button
                 key={number}
                 className=""
