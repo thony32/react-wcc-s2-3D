@@ -71,7 +71,7 @@ function GameTwo() {
   const Sertete_ref = useRef() as any;
 
 
-  const handleChangeComplete = (color: any, event: any) => {
+  const handleChangeComplete = (color: any) => {
     setColorsG((prevColorsG) => ({
       ...prevColorsG,
       [value]: color.hex
