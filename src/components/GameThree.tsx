@@ -46,8 +46,8 @@ function GameThree() {
         <h1 className="fortnite text-5xl text-center lg:text-7xl lg:text-left text-primary">Kajikajy</h1>
       </div>
 
-      <div className="grid grid-cols-2 relative">
-        <div>
+      <div className="lg:grid lg:grid-cols-2 relative space-y-4">
+        <div className="text-lg lg:text-xl 2xl:text-2xl first-letter:text-2xl lg:first-letter:text-3xl">
           Ity kilalao ity dia manampy anao hahay ny fomba ampifanampiana isa roa.
         </div>
         <div className="">
