@@ -5,15 +5,15 @@ function Presentation() {
   return (
     <div>
       <div className="lg:grid lg:grid-cols-5 px-8 2xl:px-36 2xl:py-12">
-        <div className="hidden lg:block 2xl:px-16 2xl:py-16">
+        <div className="hidden lg:block lg:px-8 lg:py-16 2xl:px-16 2xl:py-16">
           <img src={triangle3d} alt="" />
         </div>
-        <div className="col-span-3 space-y-4 p-8 bg-slate-800 rounded-2xl">
+        <div className="lg:col-span-3 space-y-4 p-8 bg-slate-800 rounded-2xl">
           <div className="">
             <h1 className="fortnite border-b-2 border-base-500 w-1/2 text-xl text-base-100">Momba ireo kilalao rehetra !</h1>
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-base-300">
+            <h1 className="text-xl lg:text-2xl font-bold text-base-300">
               Toy izao ny fomba hilalaovana azy ireo...
               <img src={line} alt="" className="w-2/3 h-4" />
             </h1>
@@ -61,7 +61,7 @@ function Presentation() {
             </div>
           </div>
         </div>
-        <div className="hidden lg:block lg:px-16 lg:py-16">
+        <div className="hidden lg:block lg:px-8 lg:py-16 2xl:px-16">
           <img src={star3d} alt="" />
         </div>
       </div>
