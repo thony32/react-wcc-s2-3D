@@ -1,9 +1,14 @@
-import wave from "../assets/footerWave.svg";
+import kids from "../assets/kidsfooter.svg";
 function Footer() {
   return (
-    <div className="relative">
-      <img src={wave} alt="" />
-      <footer className="footer items-center p-4 bg-transparent text-neutral-content">
+    <div className="relative px-[10%] h-[35vh] flex items-end">
+      <img src={kids} alt="kids" className="absolute left-[60%] overflow-y-hidden z-0" />
+      <svg className="absolute w-full bottom-0 right-0 z-10" viewBox="0 0 1440 320">
+        <path className="fill-primary" fill-opacity="1"
+          d="M0,192L60,165.3C120,139,240,85,360,101.3C480,117,600,203,720,245.3C840,288,960,288,1080,277.3C1200,267,1320,245,1380,234.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+        </path>
+      </svg>
+      <footer className="footer items-center p-4 bg-transparent text-neutral-content z-20">
         <div className="items-center grid-flow-col">
           <svg
             width="36"
