@@ -1,8 +1,9 @@
+import wave from "../assets/footerWave.svg";
 function Footer() {
   return (
-    <div>
-
-      <footer className="footer items-center p-4 bg-primary text-neutral-content">
+    <div className="relative">
+      <img src={wave} alt="" />
+      <footer className="footer items-center p-4 bg-transparent text-neutral-content">
         <div className="items-center grid-flow-col">
           <svg
             width="36"
