@@ -2,7 +2,7 @@ import React, { useReducer, useEffect, useState } from 'react';
 import { Flip } from 'react-awesome-reveal';
 import ModalComponent from '../resultModal';
 import { Images } from '../Images';
-import { DefaultImg } from '../Images';
+import QuestionImg from '/Img/question.svg';
 import '../uiComponent/ui.css';
 
 type Actions =
@@ -37,7 +37,7 @@ const shuffleCards = () => {
   return updatedCards;
 }
 
-const initialState: IState = { mCards: shuffleCards(), clickedCardCount: 0, clickedCardId: [],resultStatus:false };
+const initialState: IState = { mCards: shuffleCards(), clickedCardCount: 0, clickedCardId: [], resultStatus: false };
 
 const checkResult = (cards: Array<CardTypes>) => {
   let value = true;
@@ -55,7 +55,7 @@ const checkResult = (cards: Array<CardTypes>) => {
 
 const reducer: React.Reducer<IState, Actions> = (state, action) => {
   switch (action.type) {
-    
+
     case 'CARD_CLICKED':
       let value = [...state.mCards];
       value[action.index].open = true;
@@ -73,11 +73,11 @@ const reducer: React.Reducer<IState, Actions> = (state, action) => {
 
       updatedClickedId.push(action.index);
 
-      return { ...state, mCards: value, clickedCardId: updatedClickedId, clickedCardCount: state.clickedCardCount + 1,resultStatus: result };
+      return { ...state, mCards: value, clickedCardId: updatedClickedId, clickedCardCount: state.clickedCardCount + 1, resultStatus: result };
 
-      case 'RESTART':
-        return { mCards: shuffleCards(), clickedCardCount: 0, clickedCardId: [],resultStatus:false };
-       
+    case 'RESTART':
+      return { mCards: shuffleCards(), clickedCardCount: 0, clickedCardId: [], resultStatus: false };
+
     default:
       throw new Error();
   }
@@ -85,10 +85,10 @@ const reducer: React.Reducer<IState, Actions> = (state, action) => {
 
 const Uirender: React.FC = () => {
   const [state, dispatch] = useReducer<React.Reducer<IState, Actions>>(reducer, initialState);
-  const [isResultOpen ,setIsResultOpen] = useState<boolean>(false);
+  const [isResultOpen, setIsResultOpen] = useState<boolean>(false);
 
   useEffect(() => {
-    if(state.resultStatus){
+    if (state.resultStatus) {
       setIsResultOpen(true);
     }
   }, [state.resultStatus])
@@ -99,24 +99,22 @@ const Uirender: React.FC = () => {
   }
 
   const handleModalClose = () => {
-   setIsResultOpen(false);
+    setIsResultOpen(false);
   }
 
   const handleRestart = () => {
-    dispatch({type:'RESTART'})
+    dispatch({ type: 'RESTART' })
     handleModalClose();
   }
 
   return (
-
-
-    <div className="container">
+    <div className="flex flex-wrap gap-5 justify-center">
       {state.mCards && state.mCards.map((eachCard, i) =>
         <Flip key={eachCard.id}>
           <div>
-            <figure className="figure-block">
-              <img className="img-block"
-                src={eachCard.open ? eachCard.imgUrl : DefaultImg}
+            <figure className="w-40 h-40 hover:shadow-xl hover:scale-110 card duration-300">
+              <img className="img-block p-4"
+                src={eachCard.open ? eachCard.imgUrl : QuestionImg}
                 alt="Memory"
                 onClick={() => handleClick(i, eachCard.open || false)} />
             </figure>
@@ -125,16 +123,20 @@ const Uirender: React.FC = () => {
       )}
 
       {state.resultStatus &&
-       <ModalComponent
-        isModalOpen = { isResultOpen }
-        title = { 'Result' }
-        onClose = { handleModalClose }
-        renderItems = {
-          <>
-           <h3> Congrats , You Won !</h3>
-           <button onClick = { handleRestart } className='button-class'>Restart</button>
-          </>
-        }
+        <ModalComponent
+          isModalOpen={isResultOpen}
+          title={'Result'}
+          onClose={handleModalClose}
+          renderItems={
+            <div className='flex justify-center items-center'>
+              <div className='space-y-5'>
+                <h3 className='text-3xl fortnite'>Félicition, tu a reussie !!</h3>
+                <div className='flex justify-center'>
+                  <button onClick={handleRestart} className='btn btn-success'>Restart</button>
+                </div>
+              </div>
+            </div>
+          }
         />
       }
     </div>
