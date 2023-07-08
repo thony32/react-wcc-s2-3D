@@ -51,17 +51,17 @@ function Welcome() {
       </div>
 
       <div className="grid lg:grid-cols-2 ">
-        <div className="flex flex-col justify-between gap-8 py-44 px-16">
+        <div className="flex flex-col 2xl:justify-between items-center gap-8 py-16 px-5 2xl:py-44 2xl:px-16">
           <div>
-            <h1 className="fortnite text-8xl font-bold">
+            <h1 className="fortnite text-5xl text-center lg:text-left 2xl:text-8xl font-bold">
               Tongasoa eto amin'ny TIA ZAZA
             </h1>
           </div>
           <div>
-            <p className="text-2xl">Andeha isika hilalao rankizy !</p>
+            <p className="text-lg text-center 2xl:text-left 2xl:text-2xl">Andeha isika hilalao rankizy !</p>
           </div>
           <div className="">
-            <button className="text-2xl bg-[#5658D9] hover:bg-[#353789] hover:transition hover:duration-300 text-base-100 p-4 rounded-full font-bold">
+            <button className="2xl:text-2xl bg-[#5658D9] hover:bg-[#353789] hover:transition hover:duration-300 text-base-100 p-4 rounded-full font-bold">
               Ireo kilalaontsika {"->"}{" "}
             </button>
           </div>
