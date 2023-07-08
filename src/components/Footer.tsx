@@ -4,7 +4,7 @@ function Footer() {
     <div className="relative lg:px-[10%] h-[35vh] flex items-end">
       <img src={kids} alt="kids" className="hidden lg:block lg:absolute lg:left-[60%] lg:z-0" />
       <svg className="hidden lg:block lg:absolute lg:w-full lg:bottom-0 lg:right-0 lg:z-10" viewBox="0 0 1440 320">
-        <path className="fill-primary" fill-opacity="1"
+        <path className="fill-primary" fillOpacity="1"
           d="M0,192L60,165.3C120,139,240,85,360,101.3C480,117,600,203,720,245.3C840,288,960,288,1080,277.3C1200,267,1320,245,1380,234.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
         </path>
       </svg>
