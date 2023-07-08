@@ -10,7 +10,7 @@ function ThemeChanger() {
                 .setAttribute("data-theme", localStorage.getItem("theme") as any)
             window.dispatchEvent(new Event("themeChanged"))
         } else {
-            localStorage.setItem("theme", "light")
+            localStorage.setItem("theme", "valentine")
             document.getElementById("app")!.setAttribute("data-theme", "valentine")
             window.dispatchEvent(new Event("themeChanged"))
         }
