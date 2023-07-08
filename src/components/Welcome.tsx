@@ -51,30 +51,15 @@ function Welcome() {
         </div>
       </div>
 
-<<<<<<< HEAD
-      <div className="grid lg:grid-cols-2 ">
-        <div className=" ">
-=======
+
       <div className="grid md:grid-cols-2 ">
         <div className="flex flex-col md:justify-between gap-8 2xl:gap-16 py-8 px-5 md:py-20 md:px-12 2xl:py-40 2xl:px-20">
->>>>>>> 75925c8 (haka)
+
           <div>
             <h1 className="fortnite text-5xl md:text-7xl text-center lg:text-left 2xl:text-9xl font-bold">
               Tongasoa eto amin'ny TIA ZAZA
             </h1>
           </div>
-<<<<<<< HEAD
-          <div>
-            <p className="text-lg text-center 2xl:text-left 2xl:text-2xl">Andeha isika hilalao rankizy !</p>
-          </div>
-          <div className="">
-            <button className="2xl:text-2xl bg-[#5658D9] hover:bg-[#353789] hover:transition hover:duration-300 text-base-100 p-4 rounded-full font-bold">
-              Ireo kilalaontsika {"->"}{" "}
-            </button>
-          </div>
-        </div>
-        <div className="">
-=======
           <div className='flex justify-center lg:justify-start'>
             <p className="text-sm md:text-xl text-center lg:text-left 2xl:text-2xl w-full lg:w-2/3">Andeha isika hilalao rankizy ! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae magnam consequuntur hic voluptatem voluptatibus, eligendi, aut iusto corporis placeat dicta quod labore </p>
           </div>
@@ -95,7 +80,7 @@ function Welcome() {
           </div>
         </div>
         <div className="flex justify-center items-center order-first lg:order-last">
->>>>>>> 75925c8 (haka)
+
           <img src={kids} alt="" className="" />
         </div>
       </div>
