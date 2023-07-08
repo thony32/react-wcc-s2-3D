@@ -93,7 +93,7 @@ function GameTwo() {
       <div>
         <h1 className="fortnite text-5xl text-center lg:text-7xl lg:text-left text-primary">Fandokoina Sary</h1>
       </div>
-      <div className="lg:grid lg:grid-cols-8 bg-red-200">
+      <div className="lg:grid lg:grid-cols-8">
         {/* svgs */}
         <div className="lg:col-span-5 space-y-10 h-[75vh]">
           {/* menus */}
@@ -464,10 +464,10 @@ function GameTwo() {
           </div>
         </div>
         <div className="col-span-3 lg:py-24">
-          <h1 className="text-3xl fortnite">Lokoy amin'izay mampety anao ny sary</h1>
+          <h1 className="text-2xl lg:text-4xl fortnite">Lokoy amin'izay mampety anao ny sary</h1>
           <div className="mt-5 space-y-8">
-            <p>Lorem explication anle zavtra atao eto</p>
-            <p className="text-xs italic">Tondroy ny toerana izay tianao ho lokoina, ary makà loko avy eto ambany</p>
+            <p className="text-lg lg:text-xl 2xl:text-2xl">Ahafahanao mampitombo ny fahaizanao mamorona ity kilalao ity</p>
+            <p className="text-xs lg:text-sm italic">Tondroy ny toerana izay tianao ho lokoina, ary makà loko avy eto ambany</p>
           </div>
           <div>
             <span>{things}</span>
