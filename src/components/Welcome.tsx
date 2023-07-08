@@ -2,8 +2,8 @@ import kids from "../assets/Kids.svg";
 function Welcome() {
   return (
     <div className='h-screen'>
-      <div className="grid md:grid-cols-2 ">
-        <div className="flex flex-col md:justify-between gap-8 2xl:gap-16 py-8 px-5 md:py-20 md:px-12 2xl:py-40 2xl:px-20">
+      <div className="lg:px-[10%] grid md:grid-cols-2 ">
+        <div className="flex flex-col md:justify-between gap-8 2xl:gap-16 py-8 px-5 md:py-0 md:px-0 2xl:py-0 2xl:px-0">
 
           <div>
             <h1 className="fortnite text-5xl md:text-7xl text-center lg:text-left 2xl:text-9xl font-bold">
