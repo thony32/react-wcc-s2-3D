@@ -45,55 +45,63 @@ function GameThree() {
       <div>
         <h1 className="fortnite text-7xl text-primary">Calculeoooo</h1>
       </div>
-      <div className="">
-        {result && (
-            <div style={{ textAlign: "center" }}>
-              <h1>{result}</h1>
-              <button className="" onClick={reset}>
-                Try again
-              </button>
+
+      <div className="grid grid-cols-2 relative">
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quod quis cupiditate commodi corrupti et ducimus id error inventore non aut? Eum commodi id, cum ipsa asperiores porro deserunt tenetur.
+        </div>
+        <div className="">
+          <div className="absolute bottom-0">
+            {result && (
+              <div className="space-y-2 text-center capitalize">
+                <h1 className="text-3xl fortnite">{result}</h1>
+                <button className="btn btn-success" onClick={reset}>
+                  Try again
+                </button>
+              </div>
+            )}
+          </div>
+          <div className="flex justify-center">
+            <div className="w-1/2 space-y-5">
+              <div className="">
+                <div className="">
+                  <label className="text-xl font-semibold">Select numbers that add up to : {answer}</label>
+                </div>
+              </div>
+              <div className="flex justify-between gap-5">
+                <div className="w-1/2 flex gap-2 flex-wrap">
+                  {choices.map((number: never) => (
+                    <button
+                      key={number}
+                      className="btn btn-sm"
+                      onClick={() => select(number)}
+                    >
+                      {number}
+                    </button>
+                  ))}
+                </div>
+                <div className="w-1/2 flex gap-2 flex-wrap">
+                  {selected.map((number: never, index: any) => (
+                    <button
+                      key={index}
+                      className="btn btn-sm btn-info"
+                      onClick={() => deselect(number)}
+                    >
+                      {number}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              <div className="flex justify-center gap-2">
+                <button className="btn btn-success" onClick={done}>
+                  Done
+                </button>
+                <button className="btn" onClick={reset}>
+                  Reset
+                </button>
+              </div>
             </div>
-        )}
-
-        <div className="">
-          Select numbers that add up to:
-          <br />
-          <span className="">{answer}</span>
-        </div>
-
-        <div className="">
-          <div className="">
-            {choices.map((number : never) => (
-              <button
-                key={number}
-                className=""
-                onClick={() => select(number)}
-              >
-                {number}
-              </button>
-            ))}
           </div>
-
-          <div className="">
-            {selected.map((number : never, index : any) => (
-              <button
-                key={index}
-                className=""
-                onClick={() => deselect(number)}
-              >
-                {number}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="">
-          <button className="" onClick={reset}>
-            Reset
-          </button>
-          <button className="" onClick={done}>
-            Done
-          </button>
         </div>
       </div>
     </div>
