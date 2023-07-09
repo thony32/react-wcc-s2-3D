@@ -1,1 +1,1 @@
-https://wcc-s2-beta.netlify.app/
+https://wcc-s2-raya.netlify.app/

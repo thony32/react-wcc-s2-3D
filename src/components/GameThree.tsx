@@ -65,7 +65,7 @@ function GameThree() {
             <div className="w-1/2 space-y-5">
               <div className="">
                 <div className="">
-                  <label className="text-xl font-semibold">Tondroy ireo isa hampifanampiana mba hanome : {answer}</label>
+                  <label className="text-2xl lg:text-4xl fortnite">Tondroy ireo isa hampifanampiana mba hanome : {answer}</label>
                 </div>
               </div>
               <div className="flex justify-between gap-5">
