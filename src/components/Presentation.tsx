@@ -1,6 +1,6 @@
 import triangle3d from "../assets/triangle3D.svg";
 import star3d from "../assets/star3D.svg";
-import line from "../assets/underline.svg";
+
 function Presentation() {
   return (
     <div className="">
