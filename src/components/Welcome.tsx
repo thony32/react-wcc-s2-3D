@@ -33,7 +33,7 @@ function Welcome() {
   })
   return (
     <div className='h-[75vh] px-[0%]'>
-      <svg className="absolute bottom-[15%] -rotate-45 right-[55%]" width="200" viewBox="0 0 150 149.999998" height="200">
+      <svg className="absolute bottom-[15%] -rotate-45 right-[55%] hidden sm:block" width="200" viewBox="0 0 150 149.999998" height="200">
         <defs>
           <clipPath id="5d53806b99">
             <path d="M 4.753906 75 L 75 75 L 75 147.515625 L 4.753906 147.515625 Z M 4.753906 75 "

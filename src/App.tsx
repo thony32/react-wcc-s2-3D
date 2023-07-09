@@ -20,13 +20,13 @@ function App() {
         <div id="div_presentation">
           <Presentation />
         </div>
-        <div id="div_game_one">
+        <div id="div_game_one" className="my-10">
           <GameOne />
         </div>
-        <div id="div_game_two">
+        <div id="div_game_two" className="!my-[10%]">
           <GameTwo />
         </div>
-        <div id="div_game_three">
+        <div id="div_game_three" className="my-10">
           <GameThree />
         </div>
         <Footer />
