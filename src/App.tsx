@@ -9,13 +9,23 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="space-y-10">
+    <div className="space-y-[5%]">
       <Navbar />
-      <Welcome />
-      <Presentation />
-      <GameOne />
-      <GameTwo />
-      <GameThree />
+      <div id="div_welcome">
+        <Welcome />
+      </div>
+      <div id="div_presentation">
+        <Presentation />
+      </div>
+      <div id="div_game_one">
+        <GameOne />
+      </div>
+      <div id="div_game_two">
+        <GameTwo />
+      </div>
+      <div id="div_game_three">
+        <GameThree />
+      </div>
       <Footer />
 
       {/* astuces */}

@@ -1,7 +1,7 @@
 import kids from "../assets/Kids.svg";
 function Welcome() {
   return (
-    <div className='h-screen pt-[5%]'>
+    <div className='h-screen'>
       <div className="lg:px-[5%] grid md:grid-cols-2 ">
         <div className="flex flex-col md:justify-between gap-8 py-8 px-5 md:px-0 2xl:py-0 2xl:px-0">
           <div>
