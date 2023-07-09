@@ -43,9 +43,9 @@ function Navbar() {
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         <li><a className='text-lg'>Fandraisana</a></li>
                         <li><a className='text-lg'>Ireo Kilalao</a></li>
-                        <li><a className='text-lg'>Kilalao 1</a></li>
-                        <li><a className='text-lg'>Kilalao 2</a></li>
-                        <li><a className='text-lg'>Kilalao 3</a></li>
+                        <li><a className='text-lg'>Saina</a></li>
+                        <li><a className='text-lg'>Lokoy</a></li>
+                        <li><a className='text-lg'>Kajikajy</a></li>
                     </ul>
                 </div>
                 <svg viewBox="0 0 1440 809.999993" className="w-48 h-20">
@@ -253,7 +253,7 @@ function Navbar() {
                                 </g>
                             </svg>
                         </div>
-                        <button className='fortnite text-xl group-hover:text-primary duration-150'>Lookoy</button>
+                        <button className='fortnite text-xl group-hover:text-primary duration-150'>Lokoy</button>
                     </Link>
                     <Link to="div_game_three" smooth={true} duration={500} offset={-175} className={activeDiv === "div_game_three" ? "space-y-2 cursor-pointer group text-primary" : "space-y-2 cursor-pointer group"}>
                         <div className="flex justify-center items-center">
@@ -266,7 +266,7 @@ function Navbar() {
                                     stroke-width="1.5" stroke-linecap="round" />
                             </svg>
                         </div>
-                        <button className='fortnite text-xl group-hover:text-primary duration-150'>Kajikaji</button>
+                        <button className='fortnite text-xl group-hover:text-primary duration-150'>Kajikajy</button>
                     </Link>
                 </div>
             </div>
