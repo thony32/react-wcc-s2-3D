@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { confetti } from "tsparticles-confetti"
 
 function getQuestion() {
   const min = 2;
@@ -29,10 +30,43 @@ function GameThree() {
     setSelected(newSelected);
   }
 
+  const defaults = {
+    spread: 360,
+    ticks: 100,
+    gravity: 0,
+    decay: 0.94,
+    startVelocity: 30,
+  }
+
+  const lightConfetti = () => {
+    confetti({
+      ...defaults,
+      particleCount: 30,
+      scalar: 3,
+      shapes: ["text"],
+      shapeOptions: {
+        text: {
+          value: ["☀️", "🔥", "🌈", "🌞", "🌟", "⭐️"],
+        },
+      },
+    })
+  }
+
+  const lightShoot = () => {
+    setTimeout(lightConfetti, 0)
+    setTimeout(lightConfetti, 100)
+    setTimeout(lightConfetti, 200)
+  }
+
+  function success() {
+    setResult("Marina!")
+    lightShoot()
+  }
+
   function done() {
     const selectedTotal = selected.reduce((a: any, b: any) => a + b, 0);
     selectedTotal === answer
-      ? setResult("Marina!")
+      ? success()
       : setResult("Diso!");
   }
 
@@ -158,7 +192,7 @@ function GameThree() {
           Ity kilalao ity dia manampy anao hahay ny fomba ampifanampiana isa roa.
         </div>
         <div className="">
-          <div className="absolute bottom-0">
+          <div className="sm:absolute bottom-0 my-5">
             {result && (
               <div className="space-y-2 text-center capitalize">
                 <h1 className="text-3xl fortnite">{result}</h1>
