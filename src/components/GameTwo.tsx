@@ -89,7 +89,7 @@ function GameTwo() {
 
 
   return (
-    <div className="px-[10%] space-y-12 lg:space-y-16 overflow-x-hidden">
+    <div className="px-[10%] space-y-12 lg:space-y-16 overflow-hidden !pt-10">
       <div>
         <h1 className="fortnite text-5xl text-center lg:text-7xl lg:text-left text-primary">Fandokoina Sary</h1>
       </div>
