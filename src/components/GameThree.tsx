@@ -47,7 +47,7 @@ function GameThree() {
       </div>
 
       <div className="lg:grid lg:grid-cols-2 relative space-y-4">
-        <div className="text-lg lg:text-xl 2xl:text-2xl first-letter:text-2xl lg:first-letter:text-3xl">
+        <div className="text-lg lg:text-2xl 2xl:text-3xl first-letter:text-3xl lg:first-letter:text-4xl">
           Ity kilalao ity dia manampy anao hahay ny fomba ampifanampiana isa roa.
         </div>
         <div className="">
@@ -93,10 +93,10 @@ function GameThree() {
                 </div>
               </div>
               <div className="flex justify-center gap-2">
-                <button className="btn btn-success" onClick={done}>
+                <button className="btn btn-success text-xl" onClick={done}>
                   Tsaraina
                 </button>
-                <button className="btn" onClick={reset}>
+                <button className="btn text-xl" onClick={reset}>
                   Mamerina
                 </button>
               </div>

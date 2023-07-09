@@ -98,8 +98,8 @@ function GameTwo() {
         <div className="lg:col-span-5 space-y-10 h-[75vh]">
           {/* menus */}
           <div className="flex justify-center lg:justify-start gap-1">
-            <span onClick={() => setSubject("boy")} className="btn btn-sm btn-primary">Sary voalohany</span>
-            <span onClick={() => setSubject("girl")} className="btn btn-sm btn-primary">Sary faharoa</span>
+            <span onClick={() => setSubject("boy")} className="btn btn-primary text-white text-xl">Sary voalohany</span>
+            <span onClick={() => setSubject("girl")} className="btn btn-primary text-white text-xl">Sary faharoa</span>
           </div>
           {/* Boys */}
           <div ref={boy_ref} className="absolute duration-700">
@@ -464,14 +464,14 @@ function GameTwo() {
           </div>
         </div>
         <div className="col-span-3 lg:py-24">
-          <h1 className="text-2xl lg:text-4xl fortnite">Lokoy amin'izay mampety anao ny sary</h1>
-          <div className="mt-5 space-y-8">
+          <h1 className="text-2xl lg:text-4xl fortnite text-center">Lokoy amin'izay mampety anao ny sary</h1>
+          <div className="mt-5 space-y-8 text-center">
             <p className="text-lg lg:text-xl 2xl:text-2xl first-letter:text-2xl lg:first-letter:text-3xl">Ahafahanao mampitombo ny fahaizanao mamorona ity kilalao ity</p>
-            <p className="text-xs lg:text-sm italic">Tondroy ny toerana izay tianao ho lokoina, ary makà loko avy eto ambany</p>
+            <p className="text-xs lg:text-sm italic text-center">Tondroy ny toerana izay tianao ho lokoina, ary makà loko avy eto ambany</p>
           </div>
-          <div>
-            <span>{things}</span>
-            <div>
+          <div className="text-center space-y-4">
+            <span className="text-2xl">{things}</span>
+            <div className="flex justify-center">
               <SwatchesPicker onChangeComplete={handleChangeComplete} />
             </div>
           </div>
