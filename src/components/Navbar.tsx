@@ -1,8 +1,37 @@
 import ThemeChanger from "./ThemeChanger"
 import Sound from "./Sound";
 import { Link } from 'react-scroll'
+import { useEffect, useState } from "react";
 
 function Navbar() {
+    // * active link
+    const [activeDiv, setActiveDiv] = useState('div_welcome')
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const divs = document.querySelectorAll('div[id^="div_"]');
+            let activeId = '';
+            divs.forEach((div) => {
+                const rect = div.getBoundingClientRect();
+                if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                    activeId = div.id;
+                }
+                if (rect.top > 3000) {
+                    activeId = "div_welcome"
+                }
+                console.log(rect.top)
+            });
+            setActiveDiv(activeId);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
     return (
         <div className="navbar sticky top-0 bg-base-100 z-50">
             {/* for mobile */}
@@ -171,7 +200,7 @@ function Navbar() {
             {/* for desktop */}
             <div className="navbar-center hidden lg:flex">
                 <div className="flex gap-6 items-center">
-                    <Link to="welcome" smooth={true} duration={500} offset={-175} className="space-y-2 cursor-pointer group">
+                    <Link to="div_welcome" smooth={true} duration={500} offset={-175} className={activeDiv === "div_welcome" ? "space-y-2 cursor-pointer group text-primary" : "space-y-2 cursor-pointer group"}>
                         <div className="flex justify-center">
                             <svg className="stroke-current group-hover:stroke-primary duration-150 w-8" viewBox="0 0 24 24" fill="none">
                                 <path
@@ -182,7 +211,7 @@ function Navbar() {
                         </div>
                         <button className='fortnite text-xl group-hover:text-primary duration-150'>Fandraisana</button>
                     </Link>
-                    <Link to="presentation" smooth={true} duration={500} offset={-175} className="space-y-2 cursor-pointer group">
+                    <Link to="div_presentation" smooth={true} duration={500} offset={-175} className={activeDiv === "div_presentation" ? "space-y-2 cursor-pointer group text-primary" : "space-y-2 cursor-pointer group"}>
                         <div className="flex justify-center items-center">
                             <svg className="w-8 fill-current group-hover:fill-primary duration-150 rotate-45" viewBox="0 0 24 24">
                                 <g fill-rule="nonzero">
@@ -196,7 +225,7 @@ function Navbar() {
                         </div>
                         <button className='fortnite text-xl group-hover:text-primary duration-150'>Ireo kilalao</button>
                     </Link>
-                    <Link to="game_one"  smooth={true} duration={500} offset={-175} className="space-y-2 cursor-pointer group">
+                    <Link to="div_game_one" smooth={true} duration={500} offset={-175} className={activeDiv === "div_game_one" ? "space-y-2 cursor-pointer group text-primary" : "space-y-2 cursor-pointer group"}>
                         <div className="flex justify-center items-center">
                             <svg className="w-8 fill-current group-hover:fill-primary duration-150 group-hover:rotate-12" viewBox="0 0 512 512">
                                 <path
@@ -205,7 +234,7 @@ function Navbar() {
                         </div>
                         <button className='fortnite text-xl group-hover:text-primary duration-150'>Saina</button>
                     </Link>
-                    <Link to="game_two" smooth={true} duration={500} offset={-175} className="space-y-2 cursor-pointer group">
+                    <Link to="div_game_two" smooth={true} duration={500} offset={-175} className={activeDiv === "div_game_two" ? "space-y-2 cursor-pointer group text-primary" : "space-y-2 cursor-pointer group"}>
                         <div className="flex justify-center items-center">
                             <svg className="w-8 stroke-current group-hover:stroke-primary duration-150" viewBox="0 0 64 64" stroke-width="3" fill="none">
                                 <path
@@ -226,15 +255,15 @@ function Navbar() {
                         </div>
                         <button className='fortnite text-xl group-hover:text-primary duration-150'>Lookoy</button>
                     </Link>
-                    <Link to="game_three"  smooth={true} duration={500} offset={-175} className="space-y-2 cursor-pointer group">
+                    <Link to="div_game_three" smooth={true} duration={500} offset={-175} className={activeDiv === "div_game_three" ? "space-y-2 cursor-pointer group text-primary" : "space-y-2 cursor-pointer group"}>
                         <div className="flex justify-center items-center">
                             <svg className="w-8 stroke-current group-hover:stroke-primary duration-150" viewBox="0 0 24 24" fill="none">
                                 <path
                                     d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8"
-                                     stroke-width="1.5" stroke-linecap="round" />
+                                    stroke-width="1.5" stroke-linecap="round" />
                                 <path className="group-hover:scale-90 duration-300"
                                     d="M18 8.49998H14M18 14.5H14M18 17.5H14M10 8.49999H8M8 8.49999L6 8.49999M8 8.49999L8 6.49998M8 8.49999L8 10.5M9.5 14.5L8.00001 16M8.00001 16L6.50001 17.5M8.00001 16L6.5 14.5M8.00001 16L9.49999 17.5"
-                                     stroke-width="1.5" stroke-linecap="round" />
+                                    stroke-width="1.5" stroke-linecap="round" />
                             </svg>
                         </div>
                         <button className='fortnite text-xl group-hover:text-primary duration-150'>Kajikaji</button>

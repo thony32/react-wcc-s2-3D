@@ -11,19 +11,19 @@ function App() {
   return (
     <div className="space-y-[5%]">
       <Navbar />
-      <div id="welcome">
+      <div id="div_welcome">
         <Welcome />
       </div>
-      <div id="presentation">
+      <div id="div_presentation">
         <Presentation />
       </div>
-      <div id="game_one">
+      <div id="div_game_one">
         <GameOne />
       </div>
-      <div id="game_two">
+      <div id="div_game_two">
         <GameTwo />
       </div>
-      <div id="game_three">
+      <div id="div_game_three">
         <GameThree />
       </div>
       <Footer />
