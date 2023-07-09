@@ -32,7 +32,7 @@ function Welcome() {
     }
   })
   return (
-    <div className='h-screen'>
+    <div className='h-[75vh]'>
       <div className="lg:px-[5%] grid md:grid-cols-2 ">
         <div className="flex flex-col md:justify-between gap-8 py-8 px-5 md:px-0 2xl:py-0 2xl:px-0">
           <div>
@@ -41,10 +41,10 @@ function Welcome() {
             </h1>
           </div>
           <div className='flex justify-center lg:justify-start'>
-            <p className="text-sm md:text-xl text-center lg:text-left 2xl:text-2xl w-full lg:w-2/3 first-letter:text-lg lg:first-letter:text-4xl font-semibold">Tonga ity ny fialan-tsasatra koa indro ary ny tranokala iray izay manolotra ireo ankizy karzana kilalao telo mba hialan'izy ireo voly.</p>
+            <p className="text-sm md:text-xl text-center lg:text-left 2xl:text-3xl w-full lg:w-2/3 first-letter:text-lg lg:first-letter:text-5xl">Tonga ity ny fialan-tsasatra koa indro ary ny tranokala iray izay manolotra ireo ankizy karzana kilalao telo mba hialan'izy ireo voly.</p>
           </div>
           <div className=" flex justify-center lg:justify-start">
-            <h1 className="font-bold text-xl">Koa Andeha isika <span className="text-secondary text-3xl">hilalao</span> rankizy !</h1>
+            <h1 className="font-bold lg:text-xl 2xl:text-3xl">Koa Andeha isika <span className="text-secondary lg:text-3xl 2xl:text-4xl">hilalao</span> rankizy !</h1>
           </div>
           <div className="flex justify-center lg:justify-start">
             <Link to="div_game_one" smooth={true} duration={500} offset={-175} className="flex cursor-pointer items-center text-sm md:text-2xl bg-primary hover:translate- hover:transition hover:duration-300 text-base-100 p-2 md:p-4 rounded-full font-bold">

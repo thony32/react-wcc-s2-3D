@@ -12,7 +12,7 @@ import { Loading } from "./Loading";
 function App() {
   return (
     <Suspense fallback={<Loading />}>
-      <div className="space-y-[5%]">
+      <div className="space-y-[5%] fortnite-light">
         <Navbar />
         <div id="div_welcome">
           <Welcome />

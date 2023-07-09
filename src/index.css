@@ -5,8 +5,14 @@
 @font-face {
     font-family: "Fortnite";
     src: url("./assets/font/fortnite.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+}
+@font-face {
+    font-family: "Fortnite-light";
+    src: url("./assets/font/fortnite-light.otf");
+}
+.fortnite-light{
+    font-family: "Fortnite-light";
+    font-weight: bolder;
 }
 .fortnite{
     font-family: "Fortnite";
