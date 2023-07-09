@@ -95,7 +95,7 @@ function GameTwo() {
       </div>
       <div className="lg:grid lg:grid-cols-8">
         {/* svgs */}
-        <div className="lg:col-span-5 space-y-10 h-[60vh] sm:h-[75vh]">
+        <div className="lg:col-span-5 space-y-10 h-[65vh] sm:h-[75vh]">
           {/* menus */}
           <div className="flex justify-center lg:justify-start gap-1">
             <span onClick={() => setSubject("boy")} className="btn btn-primary text-white text-xl">Sary voalohany</span>
