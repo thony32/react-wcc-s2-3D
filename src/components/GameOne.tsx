@@ -2,8 +2,8 @@ import MemoryGame from "./MemoryGame"
 
 function GameOne() {
   return (
-    <div className="px-[10%] space-y-5 relative">
-      <svg className="absolute -bottom-[10%] right-[60%]" width="300" viewBox="0 0 150 149.999998" height="300">
+    <div className="px-[10%] min-[2000px]:px-[20%] space-y-5 relative">
+      <svg className="absolute -bottom-[10%] min-[2000px]:-bottom-[50%] right-[60%]" width="300" viewBox="0 0 150 149.999998" height="300">
         <defs>
           <filter x="0%" y="0%" width="100%" height="100%" id="82a9d157be">
             <feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" color-interpolation-filters="sRGB" />

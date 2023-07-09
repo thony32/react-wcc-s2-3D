@@ -89,7 +89,7 @@ function GameTwo() {
 
 
   return (
-    <div className="px-[10%] space-y-12 lg:space-y-16 overflow-hidden !pt-10">
+    <div className="px-[10%] min-[2000px]:px-[20%] space-y-12 lg:space-y-16 overflow-hidden !pt-10">
       <svg className="absolute hidden lg:block translate-x-[200%] translate-y-[180%] rotate-45" width="400" viewBox="0 0 224.87999 225" height="400">
         <defs>
           <clipPath id="41c0938f99">
