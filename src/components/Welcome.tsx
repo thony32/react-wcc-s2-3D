@@ -4,6 +4,7 @@ import { OrbitControls } from "@react-three/drei"
 import { Girl3D } from "../3D/Gril3D"
 import { useState } from "react"
 import { config, useSpring } from "@react-spring/three"
+import { Link } from 'react-scroll'
 
 function Welcome() {
   // * animation on theme change
@@ -12,12 +13,12 @@ function Welcome() {
 
   const { scaleBS } = useSpring({
     scaleBS: scaleB,
-    config : config.wobbly
+    config: config.wobbly
   }) as any
 
   const { scaleGS } = useSpring({
     scaleGS: scaleG,
-    config : config.wobbly
+    config: config.wobbly
   }) as any
 
   window.addEventListener("themeChanged", () => {
@@ -40,18 +41,18 @@ function Welcome() {
             </h1>
           </div>
           <div className='flex justify-center lg:justify-start'>
-            <p className="text-sm md:text-xl text-center lg:text-left 2xl:text-2xl w-full lg:w-2/3 first-letter:text-lg lg:first-letter:text-4xl">Tonga ity ny fialan-tsasatra koa indro ary ny tranokala iray izay manolotra ireo ankizy karzana kilalao telo mba hialan'izy ireo voly.</p>
+            <p className="text-sm md:text-xl text-center lg:text-left 2xl:text-2xl w-full lg:w-2/3 first-letter:text-lg lg:first-letter:text-4xl font-semibold">Tonga ity ny fialan-tsasatra koa indro ary ny tranokala iray izay manolotra ireo ankizy karzana kilalao telo mba hialan'izy ireo voly.</p>
           </div>
-          <div>
-          <h1 className="font-bold text-xl flex justify-center lg:justify-start">Koa Andeha isika hilalao rankizy !</h1>
+          <div className=" flex justify-center lg:justify-start">
+            <h1 className="font-bold text-xl">Koa Andeha isika <span className="text-secondary text-3xl">hilalao</span> rankizy !</h1>
           </div>
           <div className="flex justify-center lg:justify-start">
-            <button className="flex items-center text-sm md:text-2xl bg-primary hover:translate- hover:transition hover:duration-300 text-base-100 p-2 md:p-4 rounded-full font-bold">
+            <Link to="div_game_one" smooth={true} duration={500} offset={-175} className="flex cursor-pointer items-center text-sm md:text-2xl bg-primary hover:translate- hover:transition hover:duration-300 text-base-100 p-2 md:p-4 rounded-full font-bold">
               <span className="mx-4">Ireo kilalaontsika</span>
               <svg className="w-8 h-8 stroke-base-100 animate-bounce" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 4L12 20M12 20L18 14M12 20L6 14" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
         <div className="flex justify-center items-center order-first lg:order-last">
