@@ -7,7 +7,7 @@ function Presentation() {
       <div className="hidden">
         <img src={star3d} alt="" />
         <img src={triangle3d} alt="" />
-        <img src={line} alt="" className="w-2/3 h-4" />
+        
       </div>
 
       <div className="relative">
