@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
+import { animated } from '@react-spring/three'
 
 export function Girl3D(props: any) {
   const group = useRef()
@@ -11,7 +12,7 @@ export function Girl3D(props: any) {
     actions["ChicaAction"].play()
   }, [actions])
   return (
-    <group ref={group} {...props} dispose={null}>
+    <animated.mesh ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]} scale={0.9}>
           <group name="Root">
@@ -31,7 +32,7 @@ export function Girl3D(props: any) {
           </group>
         </group>
       </group>
-    </group>
+    </animated.mesh>
   )
 }
 
