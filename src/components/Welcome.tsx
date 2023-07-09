@@ -1,4 +1,8 @@
-import kids from "../assets/Kids.svg";
+import { Canvas } from "@react-three/fiber"
+import { Boy3D } from "../3D/Boy3D"
+import { OrbitControls } from "@react-three/drei"
+import { Girl3D } from "../3D/Gril3D"
+
 function Welcome() {
   return (
     <div className='h-screen'>
@@ -22,7 +26,14 @@ function Welcome() {
           </div>
         </div>
         <div className="flex justify-center items-center order-first lg:order-last">
-          <img src={kids} alt="" className="" />
+          <Canvas>
+            <ambientLight intensity={0.5} />
+            <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+            <pointLight position={[-10, -10, -10]} />
+            <Boy3D scale={2.5} position={[-2, -2, 0]} />
+            <Girl3D scale={1.5} position={[2,-2,0]}/>
+            <OrbitControls />
+          </Canvas>
         </div>
       </div>
     </div>

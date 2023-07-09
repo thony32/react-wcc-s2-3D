@@ -1,0 +1,11 @@
+Model Information:
+* title:	Puppet Kid (Free Demo)
+* source:	https://sketchfab.com/3d-models/puppet-kid-free-demo-b30af4c13ef64e9cab15cf2bd437a435
+* author:	joaobaltieri (https://sketchfab.com/joaobaltieri)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Puppet Kid (Free Demo)" (https://sketchfab.com/3d-models/puppet-kid-free-demo-b30af4c13ef64e9cab15cf2bd437a435) by joaobaltieri (https://sketchfab.com/joaobaltieri) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
