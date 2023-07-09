@@ -6,9 +6,11 @@ export function Loading(props: { progress?: number }) {
     return (
         <div className="h-screen flex justify-center items-center fortnite text-2xl sm:text-5xl">
             <div className='space-y-4'>
-                <label>Miandrasa kely o {progress.toFixed(0)}%</label>
+                <div className='flex justify-center'>
+                    <label className='text-center'>Miandrasa kely oh ! {progress.toFixed(0)}%</label>
+                </div>
                 <div className='flex items-center justify-center gap-3 animate-pulse'>
-                    <svg className='w-5 stroke-current' viewBox="0 0 24 24" fill="none">
+                    <svg className='w-4 stroke-current' viewBox="0 0 24 24" fill="none">
                         <path
                             d="M12 19.5C12 20.8807 10.8807 22 9.5 22C8.11929 22 7 20.8807 7 19.5C7 18.1193 8.11929 17 9.5 17C10.8807 17 12 18.1193 12 19.5Z"
                             stroke-width="1.5" />
@@ -24,7 +26,7 @@ export function Loading(props: { progress?: number }) {
                         <path d="M10 5C8.75736 5 7 4.07107 7 2" stroke-width="1.5" stroke-linecap="round" />
                     </svg>
                     <label className='text-sm'>Alefaso ny feo mba ampahafinaritra</label>
-                    <svg className='w-5 stroke-current' viewBox="0 0 24 24" fill="none">
+                    <svg className='w-4 stroke-current' viewBox="0 0 24 24" fill="none">
                         <path
                             d="M18.9999 16L19.8692 4.26538C19.9448 3.24523 19.275 2.31876 18.2826 2.07066C17.0656 1.76642 15.8548 2.58884 15.689 3.83225L15 9"
                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
