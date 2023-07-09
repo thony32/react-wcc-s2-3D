@@ -154,7 +154,7 @@ function GameThree() {
       </div>
 
       <div className="lg:grid lg:grid-cols-2 relative space-y-4">
-        <div className="text-lg lg:text-2xl 2xl:text-3xl first-letter:text-3xl lg:first-letter:text-4xl">
+        <div data-aos="flip-up" className="text-lg lg:text-2xl 2xl:text-3xl first-letter:text-3xl lg:first-letter:text-4xl">
           Ity kilalao ity dia manampy anao hahay ny fomba ampifanampiana isa roa.
         </div>
         <div className="">

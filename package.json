@@ -15,6 +15,7 @@
     "@react-three/drei": "^9.78.0",
     "@react-three/fiber": "^8.13.4",
     "@types/three": "^0.152.1",
+    "aos": "^2.3.4",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-awesome-reveal": "^4.2.5",
@@ -28,6 +29,7 @@
     "use-sound": "^4.0.1"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
     "@types/node": "^20.4.1",
     "@types/react": "^18.0.37",
     "@types/react-color": "^3.0.6",

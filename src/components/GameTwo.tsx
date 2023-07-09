@@ -463,7 +463,7 @@ function GameTwo() {
             </svg>
           </div>
         </div>
-        <div className="col-span-3 lg:py-24">
+        <div data-aos="fade-up-left" className="col-span-3 lg:py-24">
           <h1 className="text-2xl lg:text-4xl fortnite text-center">Lokoy amin'izay mampety anao ny sary</h1>
           <div className="mt-5 space-y-8 text-center">
             <p className="text-lg lg:text-xl 2xl:text-2xl first-letter:text-2xl lg:first-letter:text-3xl">Ahafahanao mampitombo ny fahaizanao mamorona ity kilalao ity</p>

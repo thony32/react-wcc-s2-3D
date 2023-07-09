@@ -6,10 +6,16 @@ import Navbar from "./components/Navbar";
 import Presentation from "./components/Presentation";
 import Welcome from "./components/Welcome";
 import "./App.css";
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
 import { Loading } from "./Loading";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <Suspense fallback={<Loading />}>
       <div className="space-y-[5%] fortnite-light">
