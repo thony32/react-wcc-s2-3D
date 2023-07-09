@@ -28,7 +28,7 @@ function ThemeChanger() {
     })
     return (
         <div className="flex gap-2 items-center">
-            <div className="tooltip" data-tip="Boys">
+            <div className="tooltip" data-tip="Lahy">
                 <svg onClick={() => HandleTheme("light")}
                     className={theme_value === "light"
                         ?
@@ -47,7 +47,7 @@ function ThemeChanger() {
                     />
                 </svg>
             </div>
-            <div className="tooltip" data-tip="Girl">
+            <div className="tooltip" data-tip="Vavy">
                 <svg onClick={() => HandleTheme("valentine")}
                     className={theme_value === "valentine"
                         ?
@@ -65,7 +65,7 @@ function ThemeChanger() {
                     ></path>
                 </svg>
             </div>
-            <div className="tooltip" data-tip="Night">
+            <div className="tooltip" data-tip="Maizina">
                 <svg onClick={() => HandleTheme("dark")}
                     className={theme_value === "dark"
                         ?
