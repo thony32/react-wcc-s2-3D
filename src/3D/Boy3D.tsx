@@ -11,6 +11,16 @@ export function Boy3D(props : any) {
     React.useEffect(() => {
       actions["Idle"].play()
     }, [actions])
+
+    // * change anim
+    window.addEventListener("themeChanged", () => {
+      if (localStorage.getItem("theme") === "dark") {
+        actions["Run"].play()
+      }
+      if (localStorage.getItem("theme") === "light" || localStorage.getItem("theme") === "valentine") {
+        actions["Idle"].play()
+      }
+    })
   return (
     <animated.mesh ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
