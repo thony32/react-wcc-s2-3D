@@ -1,5 +1,35 @@
-import kids from "../assets/Kids.svg";
+import { Canvas } from "@react-three/fiber"
+import { Boy3D } from "../3D/Boy3D"
+import { OrbitControls } from "@react-three/drei"
+import { Girl3D } from "../3D/Gril3D"
+import { useState } from "react"
+import { config, useSpring } from "@react-spring/three"
+
 function Welcome() {
+  // * animation on theme change
+  const [scaleB, setScaleB] = useState(2);
+  const [scaleG, setScaleG] = useState(1);
+
+  const { scaleBS } = useSpring({
+    scaleBS: scaleB,
+    config : config.wobbly
+  }) as any
+
+  const { scaleGS } = useSpring({
+    scaleGS: scaleG,
+    config : config.wobbly
+  }) as any
+
+  window.addEventListener("themeChanged", () => {
+    if (localStorage.getItem("theme") === "light") {
+      setScaleB(2.5)
+      setScaleG(1)
+    }
+    if (localStorage.getItem("theme") === "valentine") {
+      setScaleB(2)
+      setScaleG(1.5)
+    }
+  })
   return (
     <div className='h-screen'>
       <div className="lg:px-[5%] grid md:grid-cols-2 ">
@@ -25,7 +55,15 @@ function Welcome() {
           </div>
         </div>
         <div className="flex justify-center items-center order-first lg:order-last">
-          <img src={kids} alt="" className="" />
+          <Canvas>
+            <ambientLight intensity={0.5} />
+            <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+            <pointLight position={[-10, -10, -10]} />
+            <Boy3D scale={scaleBS} position={[-2, -2, 0]} />
+            <Girl3D scale={scaleGS} position={[2, -2, 0]} />
+            <OrbitControls enableZoom={false} enableRotate={true}
+              maxPolarAngle={Math.PI / 2} />
+          </Canvas>
         </div>
       </div>
     </div>
