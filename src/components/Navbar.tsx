@@ -1,5 +1,6 @@
 import ThemeChanger from "./ThemeChanger"
 import Sound from "./Sound";
+import { Link } from 'react-scroll'
 
 function Navbar() {
     return (
@@ -170,7 +171,7 @@ function Navbar() {
             {/* for desktop */}
             <div className="navbar-center hidden lg:flex">
                 <div className="flex gap-6 items-center">
-                    <div className="space-y-2 cursor-pointer group">
+                    <Link to="welcome" smooth={true} duration={500} offset={-175} className="space-y-2 cursor-pointer group">
                         <div className="flex justify-center">
                             <svg className="stroke-current group-hover:stroke-primary duration-150 w-8" viewBox="0 0 24 24" fill="none">
                                 <path
@@ -180,8 +181,8 @@ function Navbar() {
                             </svg>
                         </div>
                         <button className='fortnite text-xl group-hover:text-primary duration-150'>Fandraisana</button>
-                    </div>
-                    <div className="space-y-2 cursor-pointer group">
+                    </Link>
+                    <Link to="presentation" smooth={true} duration={500} offset={-175} className="space-y-2 cursor-pointer group">
                         <div className="flex justify-center items-center">
                             <svg className="w-8 fill-current group-hover:fill-primary duration-150 rotate-45" viewBox="0 0 24 24">
                                 <g fill-rule="nonzero">
@@ -194,8 +195,8 @@ function Navbar() {
                             </svg>
                         </div>
                         <button className='fortnite text-xl group-hover:text-primary duration-150'>Ireo kilalao</button>
-                    </div>
-                    <div className="space-y-2 cursor-pointer group">
+                    </Link>
+                    <Link to="game_one"  smooth={true} duration={500} offset={-175} className="space-y-2 cursor-pointer group">
                         <div className="flex justify-center items-center">
                             <svg className="w-8 fill-current group-hover:fill-primary duration-150 group-hover:rotate-12" viewBox="0 0 512 512">
                                 <path
@@ -203,8 +204,8 @@ function Navbar() {
                             </svg>
                         </div>
                         <button className='fortnite text-xl group-hover:text-primary duration-150'>Saina</button>
-                    </div>
-                    <div className="space-y-2 cursor-pointer group">
+                    </Link>
+                    <Link to="game_two" smooth={true} duration={500} offset={-175} className="space-y-2 cursor-pointer group">
                         <div className="flex justify-center items-center">
                             <svg className="w-8 stroke-current group-hover:stroke-primary duration-150" viewBox="0 0 64 64" stroke-width="3" fill="none">
                                 <path
@@ -224,8 +225,8 @@ function Navbar() {
                             </svg>
                         </div>
                         <button className='fortnite text-xl group-hover:text-primary duration-150'>Lookoy</button>
-                    </div>
-                    <div className="space-y-2 cursor-pointer group">
+                    </Link>
+                    <Link to="game_three"  smooth={true} duration={500} offset={-175} className="space-y-2 cursor-pointer group">
                         <div className="flex justify-center items-center">
                             <svg className="w-8 stroke-current group-hover:stroke-primary duration-150" viewBox="0 0 24 24" fill="none">
                                 <path
@@ -237,7 +238,7 @@ function Navbar() {
                             </svg>
                         </div>
                         <button className='fortnite text-xl group-hover:text-primary duration-150'>Kajikaji</button>
-                    </div>
+                    </Link>
                 </div>
             </div>
             <div className="navbar-end flex gap-4 items-center">

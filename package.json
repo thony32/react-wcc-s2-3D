@@ -22,6 +22,7 @@
     "react-confetti": "^6.1.0",
     "react-dom": "^18.2.0",
     "react-modal": "^3.16.1",
+    "react-scroll": "^1.8.9",
     "three": "^0.154.0",
     "tsparticles-confetti": "^2.10.1",
     "use-sound": "^4.0.1"
@@ -31,6 +32,7 @@
     "@types/react": "^18.0.37",
     "@types/react-color": "^3.0.6",
     "@types/react-dom": "^18.0.11",
+    "@types/react-scroll": "^1.8.7",
     "@typescript-eslint/eslint-plugin": "^5.59.0",
     "@typescript-eslint/parser": "^5.59.0",
     "@vitejs/plugin-react": "^4.0.0",
