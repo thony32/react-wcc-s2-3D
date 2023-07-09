@@ -1,6 +1,8 @@
 import * as React from 'react';
 import Modal from 'react-modal';
 import { confetti } from "tsparticles-confetti"
+import successSong from "/success.mp3"
+import useSound from "use-sound"
 
 const customStyles = {
   content: {
@@ -55,9 +57,10 @@ const ModalComponent = ({
     setTimeout(lightConfetti, 100)
     setTimeout(lightConfetti, 200)
   }
+  const [playSound] = useSound(successSong)
   React.useEffect(() => {
-    console.log("ok")
     lightShoot()
+    playSound()
   }, []);
   return (
     <div>

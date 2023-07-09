@@ -89,13 +89,13 @@ function GameTwo() {
 
 
   return (
-    <div className="px-[10%] space-y-12 lg:space-y-16 ">
+    <div className="px-[10%] space-y-12 lg:space-y-16 overflow-x-hidden">
       <div>
         <h1 className="fortnite text-5xl text-center lg:text-7xl lg:text-left text-primary">Fandokoina Sary</h1>
       </div>
       <div className="lg:grid lg:grid-cols-8">
         {/* svgs */}
-        <div className="lg:col-span-5 space-y-10 h-[75vh]">
+        <div className="lg:col-span-5 space-y-10 h-[60vh] sm:h-[75vh]">
           {/* menus */}
           <div className="flex justify-center lg:justify-start gap-1">
             <span onClick={() => setSubject("boy")} className="btn btn-primary text-white text-xl">Sary voalohany</span>
@@ -463,7 +463,7 @@ function GameTwo() {
             </svg>
           </div>
         </div>
-        <div data-aos="fade-up-left" className="col-span-3 lg:py-24">
+        <div className="col-span-3 lg:py-24">
           <h1 className="text-2xl lg:text-4xl fortnite text-center">Lokoy amin'izay mampety anao ny sary</h1>
           <div className="mt-5 space-y-8 text-center">
             <p className="text-lg lg:text-xl 2xl:text-2xl first-letter:text-2xl lg:first-letter:text-3xl">Ahafahanao mampitombo ny fahaizanao mamorona ity kilalao ity</p>

@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import { confetti } from "tsparticles-confetti"
+import successSong from "/success.mp3"
+import failedSong from "/failed.mp3"
+import useSound from "use-sound"
 
 function getQuestion() {
   const min = 2;
@@ -58,16 +61,25 @@ function GameThree() {
     setTimeout(lightConfetti, 200)
   }
 
+  const [playSound] = useSound(successSong)
+  const [playSoundFailed] = useSound(failedSong)
+
   function success() {
     setResult("Marina!")
     lightShoot()
+    playSound()
+  }
+
+  function failed() {
+    setResult("Diso!")
+    playSoundFailed()
   }
 
   function done() {
     const selectedTotal = selected.reduce((a: any, b: any) => a + b, 0);
     selectedTotal === answer
       ? success()
-      : setResult("Diso!");
+      : failed();
   }
 
   function reset() {
