@@ -13,6 +13,7 @@ import "aos/dist/aos.css";
 
 function App() {
   useEffect(() => {
+    console.log("Efa mba azo atao oe madio kosa le console kely eu");
     AOS.init();
     AOS.refresh();
   }, []);
