@@ -10,7 +10,10 @@ function Welcome() {
             </h1>
           </div>
           <div className='flex justify-center lg:justify-start'>
-            <p className="text-sm md:text-xl text-center lg:text-left 2xl:text-2xl w-full lg:w-2/3">Tonga ity ny fialan-tsasatra koa indro ary ny tranokala iray izay manolotra ireo ankizy karzana kilalao telo mba hialan'izy ireo voly. Koa Andeha isika hilalao rankizy !</p>
+            <p className="text-sm md:text-xl text-center lg:text-left 2xl:text-2xl w-full lg:w-2/3 first-letter:text-lg lg:first-letter:text-4xl">Tonga ity ny fialan-tsasatra koa indro ary ny tranokala iray izay manolotra ireo ankizy karzana kilalao telo mba hialan'izy ireo voly.</p>
+          </div>
+          <div>
+          <h1 className="font-bold text-xl flex justify-center lg:justify-start">Koa Andeha isika hilalao rankizy !</h1>
           </div>
           <div className="flex justify-center lg:justify-start">
             <button className="flex items-center text-sm md:text-2xl bg-primary hover:translate- hover:transition hover:duration-300 text-base-100 p-2 md:p-4 rounded-full font-bold">
