@@ -32,7 +32,7 @@ function Welcome() {
     }
   })
   return (
-    <div className='h-[75vh]'>
+    <div className='h-[75vh] px-[0%]'>
       <div className="lg:px-[5%] grid md:grid-cols-2 ">
         <div className="flex flex-col md:justify-between gap-8 py-8 px-5 md:px-0 2xl:py-0 2xl:px-0">
           <div>

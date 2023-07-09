@@ -45,7 +45,7 @@ function Presentation() {
             <div className="card-body gap-y-16 2xl:gap-y-28 my-5 2xl:my-10">
               <div className="flex justify-center">
                 <div className="text-center space-y-2">
-                  <h2 className="text-left text-lg md:text-2xl">Ireo lalao</h2>
+                  <h2 className="text-left text-lg md:text-4xl">Ireo lalao</h2>
                   <p className="fortnite text-left text-5xl md:text-7xl 2xl:text-8xl">Inona avy ary ireo karazana kilalao?</p>
                 </div>
               </div>
@@ -60,7 +60,7 @@ function Presentation() {
                     </svg>
                     <div className="space-y-2">
                       <h1 className="font-bold text-4xl">Mampitovy</h1>
-                      <p>Tiana havoaka daholo ireo sary ambadiky ny efajoro. Tadiavina tsiroaroa izy ireo, izany hoe mila miasa ny saina sy ny fitadidiana ahitàna ny toerana misy ireo sary tsirairay.</p>
+                      <p className="text-xl">Tiana havoaka daholo ireo sary ambadiky ny efajoro. Tadiavina tsiroaroa izy ireo, izany hoe mila miasa ny saina sy ny fitadidiana ahitàna ny toerana misy ireo sary tsirairay.</p>
                     </div>
                   </div>
                 </div>
@@ -71,7 +71,7 @@ function Presentation() {
                     </svg>
                     <div className="space-y-2">
                       <h1 className="font-bold text-4xl">Lokoy</h1>
-                      <p>Ahafahana mampitombo ny fahaizan'ny ankizy mamorona ity kilalao ity. Ny tanjona eto izany dia ny handokoina ny sary izay tsy miloko amin'izay mampety ny tsirairay avy. </p>
+                      <p className="text-xl">Ahafahana mampitombo ny fahaizan'ny ankizy mamorona ity kilalao ity. Ny tanjona eto izany dia ny handokoina ny sary izay tsy miloko amin'izay mampety ny tsirairay avy. </p>
                     </div>
                   </div>
                 </div>
@@ -89,7 +89,7 @@ function Presentation() {
                     </svg>
                     <div className="space-y-2">
                       <h1 className="font-bold text-4xl">Kajio</h1>
-                      <p>Ity kilalao ity dia manampy ny ankizy mba hahay ny fomba ampifanampiana isa roa. Na dia anaty fialan-tsasatra ary dia mila zarina foana ny saina mba hahay sy hahatadidy izay nianarana, ka ho ataontsika amin'ny endrika kilalao izany mba hampazoto azy ireo.</p>
+                      <p className="text-xl">Ity kilalao ity dia manampy ny ankizy mba hahay ny fomba ampifanampiana isa roa. Na dia anaty fialan-tsasatra ary dia mila zarina foana ny saina mba hahay sy hahatadidy izay nianarana, ka ho ataontsika amin'ny endrika kilalao izany mba hampazoto azy ireo.</p>
                     </div>
                   </div>
                 </div>
