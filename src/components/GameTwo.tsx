@@ -33,11 +33,11 @@ function GameTwo() {
   const [things, setThings] = useState('');
   const [value, setValue] = useState('');
   const [colors, setColors] = useState({
-    boots: 'transparent',
-    pants: 'transparent',
-    shirt: 'transparent',
-    jacket: 'transparent',
-    hair: 'transparent'
+    kiraro: 'transparent',
+    patalo: 'transparent',
+    amboninakanjo: 'transparent',
+    palitao: 'transparent',
+    volo: 'transparent'
   });
 
   const [colorsG, setColorsG] = useState({
@@ -83,7 +83,7 @@ function GameTwo() {
   };
 
   const setState = (value: any) => {
-    setThings(`${value.charAt(0).toUpperCase() + value.slice(1)} sélectionné`);
+    setThings(`Soloy ny lokon'ny ${value.charAt(0).toUpperCase() + value.slice(1)}`);
     setValue(value);
   };
 
@@ -105,7 +105,7 @@ function GameTwo() {
           <div ref={boy_ref} className="absolute duration-700">
             <svg className="w-[300px] h-[380px] lg:w-[500px] lg:h-[480px] 2xl:w-[800px] 2xl:h-[600px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1190.25 1683.749945">
 
-              <g onClick={() => setState("boots")} fill={colors.boots} ref={boots_ref}>
+              <g onClick={() => setState("kiraro")} fill={colors.kiraro} ref={boots_ref}>
                 <path
                   d="M 654.828125 1567.332031 L 654.828125 1621.871094 L 630.425781 1621.871094 L 620.070312 1605.296875 L 606.625 1627.03125 L 489.679688 1657.058594 L 596.285156 1567.332031 L 654.828125 1567.332031 "
                   fillOpacity="1" fillRule="nonzero" />
@@ -120,7 +120,7 @@ function GameTwo() {
                   fillOpacity="1" fillRule="nonzero" />
               </g>
 
-              <g onClick={() => setState("pants")} fill={colors.pants} ref={pants_ref}>
+              <g onClick={() => setState("patalo")} fill={colors.patalo} ref={pants_ref}>
                 <path
                   d="M 701.171875 932.425781 L 591.40625 932.425781 L 594.914062 1567.332031 L 657.003906 1567.332031 L 692.023438 1063.886719 L 727.046875 1567.332031 L 789.152344 1567.332031 L 790.117188 932.425781 L 701.171875 932.425781 "
                   fillOpacity="1" fillRule="nonzero" />
@@ -129,7 +129,7 @@ function GameTwo() {
                   fillOpacity="1" fillRule="nonzero" />
               </g>
 
-              <g onClick={() => setState("shirt")} fill={colors.shirt} ref={shirt_ref}>
+              <g onClick={() => setState("amboninakanjo")} fill={colors.amboninakanjo} ref={shirt_ref}>
                 <path d="M 776.882812 455.175781 L 690.742188 440.675781 L 604.621094 455.175781 L 540.742188 511.332031 L 591.40625 932.425781 L 790.117188 932.425781 L 840.761719 511.332031 L 776.882812 455.175781 "
                   fillOpacity="1" fillRule="nonzero" />
                 <path fill="#040606"
@@ -137,7 +137,7 @@ function GameTwo() {
                   fillOpacity="1" fillRule="nonzero" />
               </g>
 
-              <g onClick={() => setState("jacket")} fill={colors.jacket} ref={jacket_ref}>
+              <g onClick={() => setState("palitao")} fill={colors.palitao} ref={jacket_ref}>
                 <path
                   d="M 644.453125 918.625 C 616.578125 987.628906 569.832031 976.585938 569.832031 976.585938 L 531.019531 457.617188 L 653.003906 446.714844 L 644.453125 918.625 "
                   fillOpacity="1" fillRule="nonzero" />
@@ -177,7 +177,7 @@ function GameTwo() {
                   fillOpacity="1" fillRule="nonzero" />
               </g>
 
-              <g onClick={() => setState("hair")} fill={colors.hair} ref={hair_ref}>
+              <g onClick={() => setState("volo")} fill={colors.volo} ref={hair_ref}>
                 <path
                   d="M 575.535156 54.925781 C 575.957031 56.574219 576.535156 58.242188 577.292969 59.875 C 564.476562 59.28125 544.816406 47.058594 547.464844 31.363281 C 540.65625 48.550781 533.074219 65.496094 539.867188 84.496094 C 547.710938 106.425781 574.273438 118.433594 592.757812 130.023438 C 606.710938 138.75 622.597656 152.816406 638.273438 158.136719 C 640.34375 158.820312 680.773438 158.136719 680.773438 158.136719 L 690.742188 253.496094 L 698.714844 260.273438 L 728.519531 259.574219 L 736.859375 342.082031 C 735.910156 332.722656 739.421875 321.292969 740.753906 312.089844 C 743.84375 290.582031 746.792969 269.210938 753.410156 248.457031 C 767.070312 205.542969 798.191406 146.019531 759.027344 106.617188 C 720.21875 67.585938 660.726562 67.867188 612.3125 48.550781 C 606.0625 46.039062 598.953125 43.230469 594.265625 38.191406 C 592.335938 36.085938 585.171875 24.199219 588.667969 21.300781 C 578.503906 29.710938 572.429688 42.476562 575.535156 54.925781 "
                   fillOpacity="1" fillRule="nonzero" />

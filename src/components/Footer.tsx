@@ -1,7 +1,7 @@
 import kids from "../assets/kidsfooter.svg";
 function Footer() {
   return (
-    <div className="relative lg:px-[10%] h-[35vh] flex items-end">
+    <div className="relative lg:px-[10%] h-[40vh] flex items-end">
       <img src={kids} alt="kids" className="hidden lg:block lg:absolute lg:left-[60%] lg:z-0" />
       <svg className="hidden lg:block lg:absolute lg:w-full lg:bottom-0 lg:right-0 lg:z-10" viewBox="0 0 1440 320">
         <path className="fill-primary" fillOpacity="1"

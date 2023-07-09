@@ -20,7 +20,7 @@ function App() {
 
       {/* astuces */}
       <div className="fixed right-0 top-[40%] m-2">
-        <label className="text-astuces fortnite">Sound on please</label>
+        <label className="text-astuces fortnite">Alefaso ny feon-kira</label>
       </div>
     </div>
   );

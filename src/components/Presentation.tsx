@@ -12,7 +12,7 @@ function Presentation() {
 
       <div className="relative">
         <div className="flex justify-center">
-        <img className="absolute top-8 2xl:top-20 2xl:left-20 left-5 z-10 transform scale-100 2xl:scale-150" src={triangle3d} alt="" />
+        <img className="hidden lg:block lg:absolute lg:top-8 2xl:top-20 2xl:left-20 lg:left-5 lg:z-10 lg:transform lg:scale-100 2xl:scale-150" src={triangle3d} alt="" />
           <div className="card w-5/6 bg-neutral text-neutral-content mx-auto">
             <div className="card-body gap-y-16 2xl:gap-y-28 my-5 2xl:my-10">
               <div className="flex justify-center">
@@ -23,7 +23,7 @@ function Presentation() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 divide-x-2 px-0 md:px-8 2xl:px-32 space-y-10 md:space-y-0 ">
                 <div className="flex justify-start items-center">
-                  <div className="mx-20 space-y-16">
+                  <div className="border-l-2 border-base-100 lg:border-l-0 p-8 lg:p-0 lg:mx-20 space-y-16">
                     <svg className="stroke-base-100 w-20 h-20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M22 6.99999C19 6.99999 13.5 6.99999 11.5 12.5C9.5 18 5 18 2 18" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                       <path d="M20 5C20 5 21.219 6.21895 22 7C21.219 7.78105 20 9 20 9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -68,7 +68,7 @@ function Presentation() {
               </div>
             </div>
           </div>
-          <img className="absolute top-36 2xl:top-56 right-8 2xl:right-20 z-10 transform scale-100 2xl:scale-150" src={star3d} alt="" />
+          <img className="hidden lg:block lg:absolute lg:top-36 2xl:top-56 lg:right-8 2xl:right-20 lg:z-10 lg:transform lg:scale-100 2xl:scale-150" src={star3d} alt="" />
         </div>
       </div>
     </div>
